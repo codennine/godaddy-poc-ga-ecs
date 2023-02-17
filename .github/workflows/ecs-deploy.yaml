@@ -21,9 +21,9 @@ env:
   ECR_REPOSITORY: poc-godaddy-cluster            # set this to your Amazon ECR repository name
   ECS_SERVICE: poc-godaddy-cluster                 # set this to your Amazon ECS service name
   ECS_CLUSTER: poc-godaddy-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
+  # ECS_TASK_DEFINITION: ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: CONTAINER_NAME           # set this to the name of the container in the
+  # CONTAINER_NAME: CONTAINER_NAME           # set this to the name of the container in the
   STATIC_ECR_REGISTRY: 853098476686.dkr.ecr.us-west-2.amazonaws.com                                            # containerDefinitions section of your task definition
 
 jobs:
