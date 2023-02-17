@@ -1,5 +1,5 @@
 {
-    "family": "",
+    "family": "ga-task-definition",
     "taskRoleArn": "",
     "executionRoleArn": "",
     "networkMode": "none",
@@ -37,10 +37,6 @@
                 }
             ],
             "environmentFiles": [
-                {
-                    "value": "",
-                    "type": "s3"
-                }
             ],
             "mountPoints": [
                 {
@@ -55,48 +51,10 @@
                     "readOnly": true
                 }
             ],
-            "linuxParameters": {
-                "capabilities": {
-                    "add": [
-                        ""
-                    ],
-                    "drop": [
-                        ""
-                    ]
-                },
-                "devices": [
-                    {
-                        "hostPath": "",
-                        "containerPath": "",
-                        "permissions": [
-                            "write"
-                        ]
-                    }
-                ],
-                "initProcessEnabled": true,
-                "sharedMemorySize": 0,
-                "tmpfs": [
-                    {
-                        "containerPath": "",
-                        "size": 0,
-                        "mountOptions": [
-                            ""
-                        ]
-                    }
-                ],
-                "maxSwap": 0,
-                "swappiness": 0
-            },
             "secrets": [
                 {
                     "name": "",
                     "valueFrom": ""
-                }
-            ],
-            "dependsOn": [
-                {
-                    "containerName": "",
-                    "condition": "START"
                 }
             ],
             "startTimeout": 0,
@@ -146,25 +104,10 @@
                     }
                 ]
             },
-            "healthCheck": {
-                "command": [
-                    ""
-                ],
-                "interval": 0,
-                "timeout": 0,
-                "retries": 0,
-                "startPeriod": 0
-            },
             "systemControls": [
                 {
                     "namespace": "",
                     "value": ""
-                }
-            ],
-            "resourceRequirements": [
-                {
-                    "value": "",
-                    "type": "InferenceAccelerator"
                 }
             ],
             "firelensConfiguration": {
@@ -193,7 +136,6 @@
                 }
             },
             "efsVolumeConfiguration": {
-                "fileSystemId": "",
                 "rootDirectory": "",
                 "transitEncryption": "ENABLED",
                 "transitEncryptionPort": 0,
@@ -231,16 +173,6 @@
     ],
     "pidMode": "host",
     "ipcMode": "task",
-    "proxyConfiguration": {
-        "type": "APPMESH",
-        "containerName": "",
-        "properties": [
-            {
-                "name": "",
-                "value": ""
-            }
-        ]
-    },
     "inferenceAccelerators": [
         {
             "deviceName": "",
@@ -249,9 +181,5 @@
     ],
     "ephemeralStorage": {
         "sizeInGiB": 0
-    },
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "WINDOWS_SERVER_2022_FULL"
     }
 }
