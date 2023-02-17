@@ -6,11 +6,9 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "my-poc-3000-tcp",
                     "containerPort": 3000,
                     "hostPort": 3000,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,
@@ -76,10 +74,6 @@
     ],
     "cpu": "1024",
     "memory": "2048",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
     "registeredAt": "2023-02-17T01:35:27.190Z",
     "registeredBy": "arn:aws:iam::853098476686:root",
     "tags": []
