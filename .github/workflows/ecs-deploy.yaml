@@ -64,7 +64,7 @@ jobs:
           # docker build -t $STATIC_ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           # docker push $STATIC_ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           # echo "image=$STATIC_ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
-          echo "image=853098476686.dkr.ecr.us-west-2.amazonaws.com/ecr-poc-godaddy:$IMAGE_TAG"
+          echo "image=853098476686.dkr.ecr.us-west-2.amazonaws.com/ecr-poc-godaddy:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
