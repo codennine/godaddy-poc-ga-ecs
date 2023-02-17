@@ -2,12 +2,17 @@
     "containerDefinitions": [
         {
             "name": "my-poc",
-            "image": "853098476686.dkr.ecr.us-west-2.amazonaws.com/ecr-poc-godaddy:847a0d610f2262281f0b947d1620a01e4d562f5f",
+            "image": "",
             "cpu": 0,
             "portMappings": [
                 {
                     "containerPort": 3000,
                     "hostPort": 3000,
+                    "protocol": "tcp"
+                },
+                {
+                    "containerPort": 3000,
+                    "hostPort": 80,
                     "protocol": "tcp"
                 }
             ],
